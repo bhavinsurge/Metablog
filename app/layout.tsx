@@ -21,13 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          id="adsense-init"
+        <script
           async
-          // src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5975277884852458`}
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5975277884852458"
           crossOrigin="anonymous"
-        />
+        ></script>
+        <meta name="google-adsense-account" content="ca-pub-5975277884852458" />
       </head>
       <body
         className={`${work_Sans.className} antialiased bg-white dark:bg-[#242535] text-black dark:text-white max-w-7xl mx-auto`}
